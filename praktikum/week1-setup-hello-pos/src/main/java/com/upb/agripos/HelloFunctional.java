@@ -1,24 +1,19 @@
 package main.java.com.upb.agripos;
 
-
-
 //functional
-import java.util.*;
-import java.util.stream.*;
+import java.util.function.BiConsumer;
+
 public class HelloFunctional {
-   public static void main(String[] args) {
-      String nim = "240202862";
-      String nama = "Haidar Habibi Al Farisi";
-      List<String> produk = Arrays.asList("Beras", "Pupuk", "Benih");
-      List<Integer> harga = Arrays.asList(10000, 15000, 12000);
-      System.out.println("Hello World");
-      System.out.println("NIM: " + nim + ", Nama: " + nama);
-      System.out.println("Daftar Produk:");
-      IntStream.range(0, produk.size())
-         .forEach(i -> System.out.println("- " + produk.get(i) + ": " + harga.get(i)));
-      int total = harga.stream().mapToInt(Integer::intValue).sum();
-      System.out.println("Total harga semua produk: " + total);
-   }
+   
+    public static void main(String[] args) {
+        BiConsumer<String, String> sapa = 
+            (nama, nim) -> System.out.println( nama + " -" + nim);
+
+        // eksekusi fungsi
+        sapa.accept("Hello World I am Haidar Habibi Al Farisi", "240202862");
+        System.out.println("Program Functional Selesai");
+    }
+
 }
 
 
