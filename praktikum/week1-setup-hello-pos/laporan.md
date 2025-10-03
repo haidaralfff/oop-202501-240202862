@@ -1,64 +1,106 @@
 # Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
-
+Paradigma Pemrograman di Java (OOP, Functional, Procedural)
 ## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
+- Nama  : Haidar Habibi Al Farisi
+- NIM   : 240202862
+- Kelas : 3IKRA
 
 ---
 
 ## Tujuan
-(Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
-
----
-
+- Mahasiswa memahami perbedaan paradigma pemrograman di Java, yaitu OOP, Functional, dan Procedural.  
+- Mahasiswa memahami konsep class dan object pada pemrograman berorientasi objek.
 ## Dasar Teori
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+1.Prosedural: program dibangun sebagai rangkaian perintah (fungsi/prosedur).
+2.OOP (Object-Oriented Programming): program dibangun dari objek yang memiliki data (atribut) dan perilaku (method).
+3.Fungsional: program dipandang sebagai pemetaan fungsi matematika, lebih menekankan ekspresi dan transformasi data.
 
 ---
 
 ## Langkah Praktikum
 (Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+1. **Setup**
+   - Install Java Development Kit (JDK).
+   - Pastikan `javac` dan `java` dapat dijalankan di terminal/command prompt.
+   - Buat folder project praktikum, misalnya `praktikum-paradigma`.
+
+2. **Coding**
+   - Buat file Java untuk masing-masing paradigma:
+     - `HelloOOP.java`
+     - `HelloFunctional.java`
+     - `HelloProcedural.java`
+   - Tulis kode sesuai paradigma yang diminta.
+
+3. **Run**
+   - Compile setiap file:  
+     ```bash
+     javac HelloOOP.java
+     javac HelloFunctional.java
+     javac HelloProcedural.java
+     ```
+   - Jalankan program:  
+     ```bash
+     java HelloOOP
+     java HelloFunctional
+     java HelloProcedural
+     ```
+
 
 ---
 
 ## Kode Program
-(Tuliskan kode utama yang dibuat, contoh:  
+ kode utama yang dibuat:  
+package main.java.com.upb.agripos;
 
-```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
-```
-)
+// Procedural
+public class HelloProcedural {
+    public static void main(String[] args) {
+        String Nim = "240202862";
+        String Nama = "Haidar Habibi Al Farisi";
+
+        System.out.println("Hello World, I am " + Nama + ", " + Nim);
+    }
+}
+
+
+
 ---
 
 ## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
+(hasil eksekusi program.  
+![Screenshot hasil](/praktikum/week1-setup-hello-pos/src/main/java/com/upb/agripos/screenshots/Tugas%20OOPProcedural1.png)
+![Screenshot hasil](/praktikum/week1-setup-hello-pos/src/main/java/com/upb/agripos/screenshots/Tugas%20OOPProcedural1.png)
+![Screenshot hasil](/praktikum/week1-setup-hello-pos/src/main/java/com/upb/agripos/screenshots/TugasOOPFUNCTIONAL3.png)
 )
 ---
 
 ## Analisis
 (
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
+1.Jelaskan bagaimana kode berjalan.  
+- !(Program ditulis dalam paradigma **procedural**.  
+- Eksekusi dimulai dari method `main(String[] args)`.  
+- Dua variabel dibuat (`Nim` dan `Nama`) untuk menyimpan data mahasiswa.  
+- Program mencetak output dengan menggunakan `System.out.println`, yang menggabungkan teks dengan isi variabel.  
+- Hasilnya:) 
+2. Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
+
+3. Kendala yang dihadapi dan cara mengatasinya. 
+**Kendala 1:** Awalnya lupa menuliskan `package` sesuai struktur folder, sehingga program tidak bisa dijalankan.  
+- **Solusi:** Memastikan struktur folder sesuai dengan deklarasi package (`main/java/com/upb/agripos`).  
+- **Kendala 2:** Error ketika menjalankan `javac` karena file tidak berada di path yang tepat.   
 )
 ---
 
 ## Kesimpulan
 (Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+- Praktikum ini memberikan pemahaman tentang tiga paradigma pemrograman di Java, yaitu **Procedural, OOP, dan Functional**.  
+- **Procedural** menekankan pada penggunaan fungsi/metode sederhana tanpa class tambahan.  
+- **OOP (Object-Oriented Programming)** menggunakan **class** dan **object** untuk merepresentasikan data dan perilaku secara lebih terstruktur dengan prinsip seperti **enkapsulasi**.  
+- **Functional** menggunakan **lambda expression** atau **functional interface** untuk menuliskan kode yang lebih ringkas dan deklaratif.  
+- Dengan membandingkan ketiga paradigma, mahasiswa dapat memahami bahwa satu masalah yang sama (misalnya “Hello World”) bisa diselesaikan dengan pendekatan berbeda, sesuai kebutuhan dan kompleksitas program.  
+- Praktikum ini juga melatih mahasiswa untuk memahami perbedaan pola pikir (paradigm shift) antara pemrograman prosedural, berorientasi objek, dan fungsional.  
+
+)
 
 ---
 
