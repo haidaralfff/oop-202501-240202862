@@ -78,6 +78,9 @@ public class Produk {
         }
     }
 }
+
+
+
 2.// mainproduk.java
 
 public class MainProduk {
@@ -94,6 +97,8 @@ public class MainProduk {
         CreditBy.print("240202862", "Haidar Habibi Al Farisi");
     }
 }
+
+
 3.// creditBy.java
 
 public class CreditBy {
