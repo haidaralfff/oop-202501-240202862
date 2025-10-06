@@ -34,7 +34,7 @@ Contoh:
 ## Kode Program
 (Tuliskan kode utama yang dibuat
 
-1. // produk.java
+ // produk.java
 
 public class Produk {
     private String kode;
@@ -81,7 +81,7 @@ public class Produk {
 
 
 
-2.// mainproduk.java
+// mainproduk.java
 
 public class MainProduk {
     public static void main(String[] args) {
@@ -99,7 +99,7 @@ public class MainProduk {
 }
 
 
-3.// creditBy.java
+// creditBy.java
 
 public class CreditBy {
     public static void print(String nim, String nama) {
@@ -107,11 +107,11 @@ public class CreditBy {
     }
 }
 
-
-
-```
 )
----
+
+
+
+
 
 ## Hasil Eksekusi
 (screenshot hasil eksekusi program.  
