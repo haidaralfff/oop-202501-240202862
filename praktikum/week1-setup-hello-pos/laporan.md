@@ -62,6 +62,53 @@ public class HelloProcedural {
     }
 }
 
+package main.java.com.upb.agripos;
+
+
+    // HelloOOP
+class Mahasiswa{
+   String nama;
+   int nim;
+   Mahasiswa(String m, int n) {
+      this.nama = m ;
+      this.nim = n;
+
+   }
+   void sapa(){
+    System.out.println("Hello world I am "+ nama + ","+nim);
+   }
+}
+
+public class HelloOOP {
+   public static void main(String[] args) {
+    Mahasiswa m = new Mahasiswa("Haidar Habibi Al Farisi",240202862);
+    m.sapa();
+   }
+}
+
+
+
+package main.java.com.upb.agripos;
+
+//functional
+import java.util.function.BiConsumer;
+
+public class HelloFunctional {
+   
+    public static void main(String[] args) {
+        BiConsumer<String, String> sapa = 
+            (nama, nim) -> System.out.println( nama + " -" + nim);
+
+        // eksekusi fungsi
+        sapa.accept("Hello World I am Haidar Habibi Al Farisi", "240202862");
+        System.out.println("Program Functional Selesai");
+    }
+
+}
+
+
+
+
 
 
 ---
@@ -105,11 +152,22 @@ public class HelloProcedural {
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
+( 1.Apakah OOP selalu lebih baik dari prosedural?
+Jawaban: Tidak selalu. OOP lebih baik untuk program besar karena modular dan reusable, tapi untuk program kecil yang sederhana, prosedural lebih cepat dan mudah dibuat.
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+2. Kapan functional programming lebih cocok digunakan dibanding OOP atau prosedural?
+Jawaban: Functional cocok dipakai saat mengolah data dalam jumlah besar, pemrosesan paralel/stream, atau aplikasi AI/ML, karena minim side-effect dan lebih aman dalam environment multi-thread.
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+3. Bagaimana paradigma (prosedural, OOP, fungsional) memengaruhi maintainability dan scalability aplikasi?
+Jawaban:
+
+Prosedural: maintainability rendah, rawan spaghetti code, sulit diskalakan.
+OOP: lebih mudah dimaintain dan diskalakan karena modularitas (class & object).
+Functional: sangat maintainable untuk operasi data dan parallel, tetapi lebih sulit untuk I/O kompleks.
+Mengapa OOP lebih cocok untuk mengembangkan aplikasi POS dibanding prosedural?
+Jawaban: Karena aplikasi POS melibatkan banyak entitas nyata (Produk, Transaksi, Pelanggan) yang lebih mudah dimodelkan sebagai objek dengan atribut dan perilaku. Hal ini membuat program lebih terstruktur, mudah dikembangkan, dan lebih scalable dibanding prosedural.
+
+4. Bagaimana paradigma fungsional dapat membantu mengurangi kode berulang (boilerplate code)?
+Jawaban: Dengan memanfaatkan fungsi murni, higher-order function, dan lambda expression, developer bisa menulis logika sekali lalu dipakai ulang tanpa perlu banyak kode tambahan. Hal ini mengurangi boilerplate dan membuat kode lebih ringkas.
+
+ )

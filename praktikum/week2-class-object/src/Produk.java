@@ -1,4 +1,4 @@
-
+// produk.java
 
 public class Produk {
     private String kode;
@@ -26,7 +26,12 @@ public class Produk {
     public void setStok(int stok) { this.stok = stok; }
 
     public void tambahStok(int jumlah) {
-        this.stok += jumlah;
+        if (jumlah > 0) {
+            this.stok += jumlah;
+        } else {
+            System.out.println("Jumlah stok yang ditambahkan tidak boleh ditambahkan!");
+            
+        }
     }
 
     public void kurangiStok(int jumlah) {
