@@ -35,7 +35,6 @@ Contoh:
 (Tuliskan kode utama yang dibuat
 
  // produk.java
-
 public class Produk {
     private String kode;
     private String nama;
@@ -82,7 +81,6 @@ public class Produk {
 
 
 // mainproduk.java
-
 public class MainProduk {
     public static void main(String[] args) {
         Produk p1 = new Produk("BNH-001", "Benih Padi IR64", 25000, 100);
@@ -100,7 +98,6 @@ public class MainProduk {
 
 
 // creditBy.java
-
 public class CreditBy {
     public static void print(String nim, String nama) {
         System.out.println("\ncredit by: " +  nama + " - " +  nim);

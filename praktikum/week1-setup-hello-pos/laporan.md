@@ -42,14 +42,15 @@ Paradigma Pemrograman di Java (OOP, Functional, Procedural)
      ```bash
      java HelloOOP
      java HelloFunctional
-     java HelloProcedural
+    
      ```
+      )
 
 
 ---
 
 ## Kode Program
- kode utama yang dibuat:  
+ ( 
 package main.java.com.upb.agripos;
 
 // Procedural
@@ -86,8 +87,6 @@ public class HelloOOP {
    }
 }
 
-
-
 package main.java.com.upb.agripos;
 
 //functional
@@ -105,7 +104,7 @@ public class HelloFunctional {
     }
 
 }
-
+)
 
 
 
