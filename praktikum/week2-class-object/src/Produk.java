@@ -26,15 +26,17 @@ public class Produk {
     public void setStok(int stok) { this.stok = stok; }
 
     public void tambahStok(int jumlah) {
+        // menambahkan stok produk untuk mengelola stok produk
         if (jumlah > 0) {
             this.stok += jumlah;
             System.out.println(jumlah + " stok berhasil ditambahkan. Total stok sekarang: " + stok);
         } else {
-            System.out.println("Jumlah stok yang ditambahkan tidak boleh negatif!");
+            System.out.println("Jumlah stok sudah lebih dari cukup!");
         }
     }
 
     public void kurangiStok(int jumlah) {
+        // mengurangi stok produk mengelola stok produk
          if (jumlah > 0 && jumlah <= stok) {
             stok -= jumlah;
             System.out.println(jumlah + " stok berhasil dikurangi. Total stok sekarang: " + stok);
