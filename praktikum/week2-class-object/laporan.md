@@ -10,31 +10,45 @@ Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 
 ## Tujuan
 (Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+ *Penerapan Konsep Class, Object, dan Enkapsulasi dalam Pemrograman Berorientasi Objek (OOP) menggunakan Java*)
 
 ---
 
 ## Dasar Teori
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+(ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
+ 
+1. Class merupakan cetakan atau rancangan untuk membuat objek.
+Di dalam class berisi atribut (variabel) dan method (fungsi) yang menggambarkan perilaku suatu objek.  
+2. Atribut (data member): kode, nama, harga, stok
+Method (perilaku): tambahStok(), kurangiStok(), getNama(), setHarga(), dsb. 
+3. Class MainProduk adalah program utama yang menggunakan blueprint Produk dan CreditBy untuk membuat objek nyata dan menjalankannya.
+4. Objek adalah hasil nyata yang dibuat dari class. Setiap objek punya data sendiri sesuai blueprint-nya.
+5. Penjelasan konsep: 
+Enkapsulasi melindungi data agar tidak bisa diakses langsung dari luar class, tapi harus melalui getter dan setter.
+)
 
 ---
 
 ## Langkah Praktikum
 (Tuliskan Langkah-langkah dalam prakrikum, contoh:
-1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+1. Buka VS Code
+2. Buat file Java berikut di dalam folder project:
+-Produk.java
+-MainProduk.java
+-CreditBy.java
+Kompilasi semua file
+ -Produk.java 
+ -CreditBy.java 
+ -MainProduk.java
+3. week 2-class object.
+)
 
 ---
 
 ## Kode Program
-(Tuliskan kode utama yang dibuat
+(
+ // produk.java 
 
- // produk.java
 public class Produk {
     private String kode;
     private String nama;
@@ -61,26 +75,30 @@ public class Produk {
     public void setStok(int stok) { this.stok = stok; }
 
     public void tambahStok(int jumlah) {
+        // menambahkan stok produk untuk mengelola stok produk
         if (jumlah > 0) {
             this.stok += jumlah;
+            System.out.println(jumlah + " stok berhasil ditambahkan. Total stok sekarang: " + stok);
         } else {
-            System.out.println("Jumlah stok yang ditambahkan tidak boleh ditambahkan!");
-            
+            System.out.println("Jumlah stok sudah lebih dari cukup!");
         }
     }
 
     public void kurangiStok(int jumlah) {
-        if (this.stok >= jumlah) {
-            this.stok -= jumlah;
+        // mengurangi stok produk mengelola stok produk
+         if (jumlah > 0 && jumlah <= stok) {
+            stok -= jumlah;
+            System.out.println(jumlah + " stok berhasil dikurangi. Total stok sekarang: " + stok);
         } else {
-            System.out.println("Stok tidak mencukupi!");
+           System.out.println("Jumlah stok yang dikurangi tidak valid atau melebihi stok yang tersedia.");
         }
     }
 }
 
 
 
-// mainproduk.java
+(
+    // mainproduk.java
 public class MainProduk {
     public static void main(String[] args) {
         Produk p1 = new Produk("BNH-001", "Benih Padi IR64", 25000, 100);
@@ -91,10 +109,22 @@ public class MainProduk {
         System.out.println("Kode: " + p2.getKode() + ", Nama: " + p2.getNama() + ", Harga: " + p2.getHarga() + ", Stok: " + p2.getStok());
         System.out.println("Kode: " + p3.getKode() + ", Nama: " + p3.getNama() + ", Harga: " + p3.getHarga() + ", Stok: " + p3.getStok());
 
-        // Tampilkan identitas mahasiswa
+        // Tampilkan identitas mahasiswa nama dan nim
         CreditBy.print("240202862", "Haidar Habibi Al Farisi");
+
+        //function get untuk memanggil class produk
+        //function tambahStok dan kurangiStok untuk menambah dan mengurangi stok produk
+        // dan menampilan hasil tiga objek produk beserta perubahan stoknya
+        p1.tambahStok(20);
+        System.out.println(p1.getNama() + ", " + p1.getHarga() + ", " + p1.getStok() + " menambah stok 20");
+        p2.kurangiStok(5);
+        System.out.println(p2.getNama() + ", " + p2.getHarga() + ", " + p2.getStok() + " mengurangi stok 5");
+        p3.tambahStok(5); 
+        System.out.println(p3.getNama() + ", " + p3.getHarga() + ", " + p3.getStok() + " menambah stok 20");
     }
 }
+)
+
 
 
 // creditBy.java
@@ -103,8 +133,8 @@ public class CreditBy {
         System.out.println("\ncredit by: " +  nama + " - " +  nim);
     }
 }
-
 )
+
 
 
 
@@ -120,24 +150,30 @@ public class CreditBy {
 
 ## Analisis
 (
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
+1. Jelaskan bagaimana kode berjalan:
+-MainProduk.java → membuat objek dari Produk.java → menjalankan method tambah/kurang stok → memanggil CreditBy.java untuk menampilkan identitas.
+
+2. Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.
+Data terlindungi dengan enkapsulasi (private dan getter/setter). 
+3. Kendala yang dihadapi dan cara mengatasinya.  
+Output stok tidak berubah
 )
 ---
 
 ## Kesimpulan
 (Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+*Class Produk berperan sebagai blueprint yang mendefinisikan atribut dan perilaku produk seperti kode, nama, harga, dan stok.*
+*Program ini juga memperlihatkan bagaimana method tambahStok() dan kurangiStok() digunakan untuk mengubah data produk dengan cara yang teratur dan terproteksi.*)
 
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
+(1. [Mengapa atribut sebaiknya dideklarasikan sebagai private dalam class?]  
+   **Agar data tidak dapat diakses langsung dari luar class dan hanya dapat dimodifikasi melalui method khusus getter dan setter, sehingga menjaga keamanan dan konsistensi data.**
+ …  
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+2. [Apa fungsi getter dan setter dalam enkapsulasi?]  
+   **Getter digunakan untuk mengambil nilai atribut, sedangkan setter digunakan untuk mengubah nilai atribut secara terkontrol**…  
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+3. [Bagaimana class Produk mendukung pengembangan aplikasi POS yang lebih kompleks?]  
+   **Class Produk menjadi dasar model data untuk aplikasi POS karena dapat diperluas dengan fitur tambahan seperti kategori, diskon, transaksi, atau manajemen stok otomatis tanpa perlu mengubah struktur utama program.** …  )
