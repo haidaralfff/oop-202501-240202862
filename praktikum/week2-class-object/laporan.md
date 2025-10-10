@@ -112,8 +112,8 @@ public class MainProduk {
         // Tampilkan identitas mahasiswa nama dan nim
         CreditBy.print("240202862", "Haidar Habibi Al Farisi");
 
-       // mainproduk.java
-
+            
+ // mainproduk.java
 import model.Produk;
 import util.CreditBy;
 
@@ -142,8 +142,7 @@ p3.tambahStok(5);
 }
 
 )
-
-
+---
 
 // creditBy.java
 public class CreditBy {
@@ -152,7 +151,7 @@ public class CreditBy {
     }
 }
 )
-
+---
 
 
 
