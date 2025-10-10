@@ -1,3 +1,4 @@
+package model;
 // produk.java 
 
 public class Produk {
