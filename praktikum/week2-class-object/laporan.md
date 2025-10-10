@@ -160,7 +160,7 @@ public class CreditBy {
 ## Hasil Eksekusi
 (screenshot hasil eksekusi program.  
 ![Screenshot hasil](/praktikum/week2-class-object/screenshots/Produkjava1-OOP.png)
-![Screenshot hasil](/praktikum/week2-class-object/screenshots/mainproduk.png)
+![Screenshot hasil](/praktikum/week2-class-object/screenshots/main.produkjava.png)
 ![Screenshot hasil](/praktikum/week2-class-object/screenshots/creditbyjava.png)
 )
 ---
