@@ -1,4 +1,4 @@
-package model;
+package main.java.com.upb.agripos.model;
 // produk.java 
 
 public class Produk {
