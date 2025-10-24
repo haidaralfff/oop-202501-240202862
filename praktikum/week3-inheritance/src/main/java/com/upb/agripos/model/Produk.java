@@ -31,9 +31,7 @@ public class Produk {
         if (jumlah > 0) {
             this.stok += jumlah;
             System.out.println(jumlah + " stok berhasil ditambahkan. Total stok sekarang: " + stok);
-        } else {
-            System.out.println("Jumlah stok sudah lebih dari cukup!");
-        }
+        } 
     }
 
     public void kurangiStok(int jumlah) {
@@ -41,9 +39,7 @@ public class Produk {
          if (jumlah > 0 && jumlah <= stok) {
             stok -= jumlah;
             System.out.println(jumlah + " stok berhasil dikurangi. Total stok sekarang: " + stok);
-        } else {
-           System.out.println("Jumlah stok yang dikurangi tidak valid atau melebihi stok yang tersedia.");
-        }
+        } 
     }
 
 
