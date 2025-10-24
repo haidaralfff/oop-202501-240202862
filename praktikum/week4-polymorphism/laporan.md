@@ -1,16 +1,16 @@
-# Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+# Laporan Praktikum Minggu ke (4)
+Topik: [Mahasiswa mampu **mengimplementasikan polymorphism (overriding, overloading, dynamic binding)** dalam program.]
 
 ## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
+- Nama  : Haidar Habibi Al Farisi
+- NIM   : 240202862
+- Kelas : 3IKRA
 
 ---
 
 ## Tujuan
 (Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+ *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
 
 ---
 
@@ -24,7 +24,7 @@ Contoh:
 ---
 
 ## Langkah Praktikum
-(Tuliskan Langkah-langkah dalam prakrikum, contoh:
+(Tuliskan Langkah-langkah dalam praktikum, contoh:
 1. Langkah-langkah yang dilakukan (setup, coding, run).  
 2. File/kode yang dibuat.  
 3. Commit message yang digunakan.)
@@ -35,16 +35,39 @@ Contoh:
 (Tuliskan kode utama yang dibuat, contoh:  
 
 ```java
-// Contoh
-Produk p1 = new Produk("BNH-001", "Benih Padi", 25000, 100);
-System.out.println(p1.getNama());
+// kode utama program
+package main.java.com.upb.agripos;
+
+import main.java.com.upb.agripos.model.AlatPertanian;
+import main.java.com.upb.agripos.model.Benih;
+import main.java.com.upb.agripos.model.ObatHama;
+import main.java.com.upb.agripos.model.Pupuk;
+import main.java.com.upb.agripos.model.Produk;
+import main.java.com.upb.agripos.util.CreditBy;
+
+public class MainPolymorphism {
+    public static void main(String[] args) {
+        Produk[] daftarProduk = {
+            new Benih("BNH-001", "Benih Padi IR64", 25000, 100, "IR64"),
+            new Pupuk("PPK-101", "Pupuk Urea", 350000, 40, "Urea"),
+            new AlatPertanian("ALT-501", "Cangkul Baja", 90000, 15, "Baja"),
+            new ObatHama("OBT-301", "Obat Hama Serangga", 50000, 20, "Serangga")
+        };
+// dynamic binding untuk menampilkan info produk
+        for (Produk p : daftarProduk) {
+            p.getInfo();
+        }
+
+        CreditBy.print("240202862", "Haidar Habibi Al Farisi");
+    }
+}
 ```
 )
 ---
 
 ## Hasil Eksekusi
 (Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
+![Screenshot hasil](/praktikum/week4-polymorphism/screenshots/week4-polymorpishm.png)
 )
 ---
 
@@ -58,7 +81,7 @@ System.out.println(p1.getNama());
 
 ## Kesimpulan
 (Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+*Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
 
 ---
 

@@ -1,5 +1,5 @@
 # Laporan Praktikum Minggu 1 (sesuaikan minggu ke berapa?)
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+Topik: Pembuatan Objek dan Penerapan Inheritance (Pewarisan) pada Sistem Produk
 
 ## Identitas
 - Nama  : Haidar Habibi Al Farisi
@@ -10,7 +10,7 @@ Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 
 ## Tujuan
 (Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+ *Implementasi Konsep Pewarisan Inheritance pada Java*)
 
 ---
 
@@ -27,8 +27,8 @@ Contoh:
 ## Langkah Praktikum
 (Tuliskan Langkah-langkah dalam prakrikum, contoh:
 1. Langkah-langkah yang dilakukan (setup, coding, run).  
-2. File/kode yang dibuat.  
-3. Commit message yang digunakan.)
+2. Alat Pertanian.Java,Benih.Java,Pupuk.Java,Produk.Java  
+3. git commit -m "week3-inheritance")
 
 ---
 
