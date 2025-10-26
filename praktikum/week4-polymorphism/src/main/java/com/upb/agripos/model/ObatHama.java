@@ -11,10 +11,7 @@ public class ObatHama extends Produk {
     public String getTargetHama() { return targetHama; }
     public void setTargetHama(String targetHama) { this.targetHama = targetHama; }
 
-    public void deskripsiObatHama() {
-        System.out.println("Obat Hama: " + getNama() + " untuk hama: " + targetHama + " dengan harga: " + getHarga() + " kode: " + getKode() + " stok: " + getStok());
-    }
-
+    
     @Override
     public void getInfo() {
         System.out.println("Produk: " + getNama() + " (Kode: " + getKode() + " Stok: " + getStok() + ") untuk hama: " + targetHama + " dengan harga: " + getHarga());

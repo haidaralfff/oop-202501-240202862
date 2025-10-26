@@ -12,10 +12,6 @@ public class Pupuk extends Produk {
 
     public String getJenis() { return jenis; }
     public void setJenis(String jenis) { this.jenis = jenis; }
-    // deskripsiPupuk
-    public void deskripsiPupuk() {
-        System.out.println("Pupuk :" + getNama() + " jenis pupuk: " + jenis + " harga: " + getHarga() + " kode: " + getKode() + " stok: " + getStok());
-    }
     // Override method
     @Override
     public void getInfo() {

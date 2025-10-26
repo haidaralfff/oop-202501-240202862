@@ -13,9 +13,7 @@ public class Benih extends Produk {
     public String getVarietas() { return varietas; }
     public void setVarietas(String varietas) { this.varietas = varietas; }
 
-   public void deskripsiBenih() {
-        System.out.println("Benih: " + getNama() + " varietas: " + varietas + " dengan harga: " + getHarga() + " kode: " + getKode() + " stok: " + getStok());
-    }
+
     // Override method subclas product
     @Override
     public void getInfo() {

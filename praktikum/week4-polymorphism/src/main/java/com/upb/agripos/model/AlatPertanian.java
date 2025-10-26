@@ -11,9 +11,7 @@ public class AlatPertanian extends Produk {
     public String getMaterial() { return material; }
     public void setMaterial(String material) { this.material = material; }
 
-    public void deskripsiAlat() {
-        System.out.println("Alat Pertanian " + getNama() + " terbuat dari " + material + " dengan harga " + getHarga()+ " kode: " + getKode() + " stok: " + getStok());
-    }
+ 
     @Override
      public void getInfo() {
        System.out.println("Produk: " + getNama() + " (Kode: " + getKode() + " Stok: " + getStok() + ") dibuat dari " + material + " dengan harga " + getHarga());
