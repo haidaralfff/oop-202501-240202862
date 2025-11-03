@@ -91,8 +91,7 @@ Gunakan modifier protected untuk properti umum di kelas induk agar kelas anak da
 ---
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Penerapan Pewarisan Inheritance:
+(*Penerapan Pewarisan Inheritance:
 Praktikum ini bertujuan untuk menunjukkan bagaimana hierarki kelas dibuat.
 Kelas-kelas spesifik (Benih, Pupuk, AlatPertanian) diasumsikan mewarisi properti dan perilaku umum dari kelas induk (Superclass), yang kemungkinan besar adalah Produk.
 Tujuan utamanya adalah meminimalkan duplikasi kode (sifat-sifat umum seperti kode, nama, harga, dan stok didefinisikan sekali di kelas induk) dan menciptakan struktur program yang lebih terorganisir.
@@ -105,11 +104,11 @@ Masing-masing objek anak (misalnya, Benih) memiliki atribut spesifik yang tidak 
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
+(1. Apa keuntungan menggunakan inheritance dibanding membuat class terpisah tanpa hubungan?   
+   **Jawaban: Dengan inheritance, kode menjadi lebih efisien karena atribut dan method umum cukup ditulis sekali di superclass. Hal ini mengurangi duplikasi kode, memudahkan pemeliharaan, serta membuat hubungan antar class lebih jelas secara hierarkis.** …  
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+2. Bagaimana cara subclass memanggil konstruktor superclass?    
+   **Jawaban:Subclass dapat memanggil konstruktor superclass menggunakan keyword super(...) di baris pertama konstruktor subclass, dengan menyertakan argumen yang sesuai dengan konstruktor superclass.** …  
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+3.Berikan contoh kasus di POS pertanian selain Benih, Pupuk, dan Alat Pertanian yang bisa dijadikan subclass. 
+   **Jawaban: Contoh lainnya adalah Pestisida yang memiliki atribut tambahan seperti bahanAktif, atau BibitTernak dengan atribut spesies dan umur. Keduanya bisa menjadi subclass dari Produk dengan menyesuaikan method getKeterangan().** …  )
