@@ -1,5 +1,5 @@
 # Laporan Praktikum Minggu 5 
-Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
+Topik: abstraction-interface
 
 ## Identitas
 - Nama  : Haidar Habibi Al Farisi
