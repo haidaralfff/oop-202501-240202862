@@ -14,11 +14,13 @@ Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 ---
 
 ## Dasar Teori
-(Tuliskan ringkasan teori singkat (3–5 poin) yang mendasari praktikum.  
-Contoh:  
-1. Class adalah blueprint dari objek.  
-2. Object adalah instansiasi dari class.  
-3. Enkapsulasi digunakan untuk menyembunyikan data.)
+( 
+1. **Abstraksi (Abstraction)** adalah proses menyembunyikan detail implementasi dan hanya menampilkan fungsionalitas penting kepada pengguna.  
+2. **Abstract Class** digunakan untuk membuat class dasar yang tidak dapat diinstansiasi secara langsung, tetapi dapat diwariskan oleh class turunannya.  
+3. **Interface** adalah kontrak yang mendefinisikan metode tanpa implementasi, yang harus diimplementasikan oleh class yang menggunakannya.  
+4. **Polymorphism** dapat terjadi melalui interface dan abstract class, memungkinkan objek dari class yang berbeda untuk diperlakukan sama.  
+5. Abstraksi membantu pengembang fokus pada apa yang dilakukan suatu class, bukan bagaimana ia melakukannya.
+)
 
 ---
 
@@ -92,8 +94,8 @@ Interface Receiptable digunakan agar setiap class dapat mencetak struk dengan ca
 (1. Apa perbedaan antara class abstrak dan interface dalam Java?  
    **Jawaban:*Class abstrak dapat memiliki atribut dan metode dengan implementasi, sedangkan interface hanya dapat memiliki deklarasi metode (tanpa implementasi, kecuali default atau static). Class dapat meng-extend satu class abstrak, tetapi dapat mengimplementasikan banyak interface.* …  
 
-2.Kapan sebaiknya menggunakan abstract class dibandingkan interface?
-   **Jawaban:*Abstract class digunakan ketika beberapa class memiliki kesamaan perilaku dan atribut, sedangkan interface digunakan ketika kita ingin mendefinisikan kontrak umum untuk berbagai class yang tidak memiliki hubungan langsung dalam hierarki pewarisan.* …  
+(2.Kapan sebaiknya menggunakan abstract class dibandingkan interface?
+   **Jawaban:*Abstract class digunakan ketika beberapa class memiliki kesamaan perilaku dan atribut, sedangkan interface digunakan ketika kita ingin mendefinisikan kontrak umum untuk berbagai class yang tidak memiliki hubungan langsung dalam hierarki pewarisan.* … ) 
 
-3. Bagaimana penerapan polymorphism dalam penggunaan interface di praktikum  
+(3. Bagaimana penerapan polymorphism dalam penggunaan interface di praktikum  
    **Jawaban:*Polymorphism terjadi saat objek dari berbagai class (Cash, EWallet, TransferBank) diperlakukan sama melalui tipe interface Receiptable. Masing-masing class memiliki implementasi berbeda dari metode cetakStruk(), namun dipanggil dengan cara yang sama.* …  )
