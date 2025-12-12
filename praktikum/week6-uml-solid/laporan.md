@@ -10,7 +10,7 @@ Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 
 ## Tujuan
 (Tuliskan tujuan praktikum minggu ini.  
-Contoh: *Mahasiswa memahami konsep class dan object serta dapat membuat class Produk dengan enkapsulasi.*)
+Contoh: *Mahasiswa Dapat Memahani Konsep SOLID.*)
 
 ---
 
@@ -42,32 +42,50 @@ System.out.println(p1.getNama());
 )
 ---
 
-## Hasil Eksekusi
-(Sertakan screenshot hasil eksekusi program.  
+## SOLID PRINSIP UML
+(UML  
 ![Screenshot hasil](/praktikum/week5-abstraction-interface/screenshots/week5-abstraction.png)
 )
 ---
-
-## Analisis
-(
-- Jelaskan bagaimana kode berjalan.  
-- Apa perbedaan pendekatan minggu ini dibanding minggu sebelumnya.  
-- Kendala yang dihadapi dan cara mengatasinya.  
+(UML  
+![Screenshot hasil](/praktikum/week6-uml-solid/screenshots/uml-usecasediagram.png)
 )
+(UML  
+![Screenshot hasil](/praktikum/week6-uml-solid/screenshots/uml_activitydiagram.png)
+)
+(
+![Screenshot hasil](/praktikum/week6-uml-solid/screenshots/uml_classdiagram.png)
+)
+![Screenshot hasil](/praktikum/week6-uml-solid/screenshots/uml_SEQUENCE%20DIAGRAM.png)
+
 ---
+)
+
+
 
 ## Kesimpulan
-(Tuliskan kesimpulan dari praktikum minggu ini.  
-Contoh: *Dengan menggunakan class dan object, program menjadi lebih terstruktur dan mudah dikembangkan.*)
+
+Desain arsitektur sistem Agri-POS menggunakan UML dan prinsip SOLID berhasil menghasilkan sistem yang mudah diperluas dan dirawat. Dengan menerapkan SRP, OCP, dan DIP, kode menjadi modular dan fleksibel untuk perubahan di masa depan. Diagram UML membantu komunikasi desain yang jelas, sementara prinsip SOLID memastikan kualitas implementation yang baik.
 
 ---
 
 ## Quiz
-(1. [Tuliskan kembali pertanyaan 1 dari panduan]  
-   **Jawaban:** …  
 
-2. [Tuliskan kembali pertanyaan 2 dari panduan]  
-   **Jawaban:** …  
+1. **Jelaskan perbedaan aggregation dan composition serta berikan contoh penerapannya pada desain Anda.**
+   
+   **Jawaban:** 
+   - **Aggregation**: Relasi HAS-A yang longgar, child dapat exist tanpa parent (diamond kosong di UML). Contoh: Transaksi → Produk.
+   - **Composition**: Relasi PART-OF yang kuat, child tidak exist tanpa parent (diamond penuh di UML). Contoh: Transaksi → ItemKeranjang.
 
-3. [Tuliskan kembali pertanyaan 3 dari panduan]  
-   **Jawaban:** …  )
+2. **Bagaimana prinsip Open/Closed dapat memastikan sistem mudah dikembangkan?**
+   
+   **Jawaban:** 
+   - Sistem terbuka untuk extension (tambah metode pembayaran baru) tetapi tertutup untuk modifikasi (Transaksi class tidak perlu ubah).
+   - Dengan interface PaymentMethod, dapat menambah PembayaranTransferBank/QRIS tanpa mengubah kode existing, sehingga mengurangi risk bug dan development lebih cepat.
+
+3. **Mengapa Dependency Inversion Principle (DIP) meningkatkan testability? Berikan contoh penerapannya.**
+   
+   **Jawaban:** 
+   - DIP memungkinkan kita inject mock PaymentMethod saat testing tanpa perlu actual implementation.
+   - Contoh: `Transaksi trx = new Transaksi(mockPayment)` → bisa test logic tanpa bergantung pada PembayaranTunai/EWallet yang sebenarnya.
+   - Hasilnya: test lebih isolated, mudah verify behavior, dan tidak ada side effect dari external dependencies.
