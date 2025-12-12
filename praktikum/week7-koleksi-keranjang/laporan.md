@@ -2,9 +2,9 @@
 Topik: [Tuliskan judul topik, misalnya "Class dan Object"]
 
 ## Identitas
-- Nama  : [Nama Mahasiswa]
-- NIM   : [NIM Mahasiswa]
-- Kelas : [Kelas]
+- Nama  : Haidar Habibi Al Farisi
+- NIM   : 240202862
+- Kelas : 3IKRA
 
 ---
 
@@ -44,7 +44,7 @@ System.out.println(p1.getNama());
 
 ## Hasil Eksekusi
 (Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/hasil.png)
+![Screenshot hasil](screenshots/KoleksiKeranjang'.png)
 )
 ---
 
