@@ -1,23 +1,23 @@
 package com.upb.agripos;
-// library yang digunakan bawaan java
+// library java hashmap dan map
 import java.util.HashMap;
 import java.util.Map;
 
-// Class ShoppingCartMap menggunakan Map
+// Constructor 
 public class ShoppingCartMap {
     private final Map<Product, Integer> items = new HashMap<>();
 
-    // Menambahkan produk ke keranjang
+    // factory method dari class ShoppingCartMap
     public void addProduct(Product p) { items.put(p, items.getOrDefault(p, 0) + 1); }
 
-    //hapus barang dari keranjang
+    //fungsi menghapus produk turunan dari class Product
     public void removeProduct(Product p) {
         if (!items.containsKey(p)) return;
         int qty = items.get(p);
         if (qty > 1) items.put(p, qty - 1);
         else items.remove(p);
     }
-    // calculate total price
+    // fungsi mendapatkan total harga
     public double getTotal() {
         double total = 0;
         // mapping product dan quantity
@@ -26,7 +26,7 @@ public class ShoppingCartMap {
         }
         return total;
     }
-    // isi keranjang
+    // fungsi mencetak isi keranjang 
     public void printCart() {
         System.out.println("Isi Keranjang (Map):");
         for (Map.Entry<Product, Integer> e : items.entrySet()) {
