@@ -15,6 +15,7 @@ public class Maincart {
         cart.addProduct(p2);
         cart.printCart();
 
+
         cart.removeProduct(p1);
         cart.printCart();
     }
