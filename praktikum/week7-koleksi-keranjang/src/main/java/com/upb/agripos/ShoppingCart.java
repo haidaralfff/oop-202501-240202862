@@ -25,4 +25,5 @@ public class ShoppingCart {
         }
         System.out.println("Total: " + getTotal());
     }
+
 }
