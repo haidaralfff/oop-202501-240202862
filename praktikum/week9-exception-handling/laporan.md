@@ -4,9 +4,9 @@ Topik: Exception Handling dan Custom Exception pada Aplikasi Agri-POS
 
 ## Identitas
 
-* Nama  : [Nama Mahasiswa]
-* NIM   : [NIM Mahasiswa]
-* Kelas : [Kelas]
+* Nama  : Haidar HabibI Al Farisi
+* NIM   : 240202862
+* Kelas : 3IKRA
 
 ---
 
