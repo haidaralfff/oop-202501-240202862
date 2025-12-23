@@ -65,7 +65,7 @@ public class Maincart {
 
 ## Hasil Eksekusi
 (Sertakan screenshot hasil eksekusi program.  
-![Screenshot hasil](screenshots/KoleksiKeranjang'.png)
+![Screenshot hasil](/praktikum/week7-koleksi-keranjang/screenshots/week7koleksi%20keranjang.png)
 )
 ---
 
