@@ -28,6 +28,11 @@ public class MainExceptionDemo {
         } catch (Exception e) {
             System.out.println("Kesalahan: " + e.getMessage());
         }
-
+        // insufficient stock
+        try {
+            cart.checkout();
+        } catch (InsufficientStockException e) {
+            System.out.println("Kesalahan: " + e.getMessage());
+        }
     }
 }
