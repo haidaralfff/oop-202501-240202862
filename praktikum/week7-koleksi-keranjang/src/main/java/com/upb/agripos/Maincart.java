@@ -14,8 +14,8 @@ public class Maincart {
         cart.addProduct(p2);
         cart.printCart();
 
-    System.out.println("\nSetelah menghapus " + p1.getCode() + " " + p1.getName() + " dari keranjang:");
-        cart.removeProduct(p1);
+    System.out.println("\nSetelah menghapus " + p2.getCode() + " " + p2.getName() + " dari keranjang:");
+        cart.removeProduct(p2);
         cart.printCart();
     }
 }
