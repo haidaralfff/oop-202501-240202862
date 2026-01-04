@@ -6,7 +6,7 @@ public class Maincart {
         System.out.println("Hello, I am Haidar Habibi Al Farisi-240202862 (Week7)");
 
         Product p1 = new Product("P01", "Beras", 50000, 0);
-        Product p2 = new Product("P02", "Pupuk", 30000);
+        Product p2 = new Product("P02", "Pupuk", 30000, 0);
         
 
         ShoppingCart cart = new ShoppingCart();
