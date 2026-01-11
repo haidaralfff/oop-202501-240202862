@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.upb.agripos.model.ProductTest" time="0.033" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.upb.agripos.model.ProductTest" time="0.065" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="23"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-23\bin"/>
-    <property name="sun.java.command" value="C:\Users\haida\AppData\Local\Temp\surefire12409796931410110757\surefirebooter7150106279303181320.jar C:\Users\haida\AppData\Local\Temp\surefire12409796931410110757 2026-01-10T20-04-48_783-jvmRun1 surefire1488747655503387523tmp surefire_04030859328730414022tmp"/>
+    <property name="sun.java.command" value="C:\Users\haida\AppData\Local\Temp\surefire3663129318276472455\surefirebooter4380025114086421757.jar C:\Users\haida\AppData\Local\Temp\surefire3663129318276472455 2026-01-11T16-45-37_408-jvmRun1 surefire9513847137025775884tmp surefire_05190395753741032839tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="c:\Users\haida\CODE\oop-202501-240202862\praktikum\week10-pattern-testing\target\test-classes;c:\Users\haida\CODE\oop-202501-240202862\praktikum\week10-pattern-testing\target\classes;C:\Users\haida\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.9.2\junit-jupiter-api-5.9.2.jar;C:\Users\haida\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\haida\.m2\repository\org\junit\platform\junit-platform-commons\1.9.2\junit-platform-commons-1.9.2.jar;C:\Users\haida\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\haida\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.9.2\junit-jupiter-engine-5.9.2.jar;C:\Users\haida\.m2\repository\org\junit\platform\junit-platform-engine\1.9.2\junit-platform-engine-1.9.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\haida\AppData\Local\Temp\surefire12409796931410110757\surefirebooter7150106279303181320.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\haida\AppData\Local\Temp\surefire3663129318276472455\surefirebooter4380025114086421757.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="23.0.1+11-39"/>
@@ -58,6 +58,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="67.0"/>
   </properties>
-  <testcase name="testProductCode" classname="com.upb.agripos.model.ProductTest" time="0.023"/>
+  <testcase name="testProductCode" classname="com.upb.agripos.model.ProductTest" time="0.045"/>
   <testcase name="testProductName" classname="com.upb.agripos.model.ProductTest" time="0.001"/>
 </testsuite>
