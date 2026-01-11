@@ -1,4 +1,4 @@
-package test.java.com.upb.agripos.model;
+package com.upb.agripos.model;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Test;
