@@ -140,12 +140,12 @@ public class ProductTest {
 ---
 
 ## Analisis
-(
+
 Program menerapkan Singleton Pattern untuk memastikan koneksi database hanya dibuat satu kali.
 Pola MVC memisahkan tanggung jawab antara data (Model), tampilan (View), dan pengendali (Controller) sehingga kode lebih rapi dan mudah dipelihara.
 Unit testing dengan JUnit membantu memastikan bahwa method pada class Product berjalan sesuai dengan yang diharapkan.
 Kendala yang dihadapi adalah error konfigurasi package dan Maven, yang diatasi dengan menyesuaikan struktur direktori dan package declaration.
-)
+
 ---
 
 ## Kesimpulan
