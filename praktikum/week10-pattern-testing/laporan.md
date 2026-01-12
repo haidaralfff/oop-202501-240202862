@@ -153,10 +153,10 @@ Kendala yang dihadapi adalah error konfigurasi package dan Maven, yang diatasi d
 
 ## Quiz
 (1. Mengapa constructor pada Singleton harus bersifat private? 
-   **Jawaban:** Agar object tidak dapat dibuat langsung dari luar class dan hanya dapat diakses melalui method getInstance().  
+   **Jawaban: Agar object tidak dapat dibuat langsung dari luar class dan hanya dapat diakses melalui method getInstance().** 
 
 2. Apa manfaat penerapan MVC?
-   **Jawaban:**Agar kode lebih terstruktur, mudah dipelihara, dan memudahkan pengembangan serta pengujian.
+   **Jawaban: Agar kode lebih terstruktur, mudah dipelihara, dan memudahkan pengembangan serta pengujian.**
 
 3. Apa peran unit testing dalam pengembangan perangkat lunak?
-   **Jawaban:** Untuk memastikan setiap bagian kecil dari program berjalan dengan benar dan mendeteksi bug sejak dini. )
+   **Jawaban: Untuk memastikan setiap bagian kecil dari program berjalan dengan benar dan mendeteksi bug sejak dini.**  )
