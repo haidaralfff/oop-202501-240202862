@@ -152,7 +152,8 @@ Kendala yang dihadapi adalah error konfigurasi package dan Maven, yang diatasi d
 ---
 
 ## Quiz
-(1. Mengapa constructor pada Singleton harus bersifat private? 
+(
+1. Mengapa constructor pada Singleton harus bersifat private? 
    **Jawaban: Agar object tidak dapat dibuat langsung dari luar class dan hanya dapat diakses melalui method getInstance().** 
 
 2. Apa manfaat penerapan MVC?
