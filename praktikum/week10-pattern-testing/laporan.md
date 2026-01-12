@@ -39,9 +39,8 @@ Contoh:
 ---
 ## Implementasi Program
 
-//Singleton – DatabaseConnection
-
 ```java
+//Singleton – DatabaseConnection
 package com.upb.agripos.config;
 
 public class DatabaseConnection {
@@ -58,7 +57,6 @@ public class DatabaseConnection {
 }
 
 //model 
-
 package com.upb.agripos.model;
 
 public class Product {
