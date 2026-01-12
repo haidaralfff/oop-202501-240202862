@@ -25,7 +25,7 @@ public class ProductTableView extends VBox {
         setSpacing(10);
         setPadding(new Insets(10));
 
-        // Setup Input Form
+        // Input Form
         txtCode.setPromptText("Kode");
         txtName.setPromptText("Nama Produk");
         txtPrice.setPromptText("Harga");
@@ -33,7 +33,7 @@ public class ProductTableView extends VBox {
 
         HBox formBox = new HBox(10, txtCode, txtName, txtPrice, txtStock, btnAdd);
         
-        // Setup Table Columns
+        //  Table Columns
         TableColumn<Product, String> colCode = new TableColumn<>("Kode");
         colCode.setCellValueFactory(new PropertyValueFactory<>("code"));
 
@@ -49,7 +49,7 @@ public class ProductTableView extends VBox {
 
         table.getColumns().addAll(colCode, colName, colPrice, colStock);
 
-        // Add components
+        // components
         getChildren().addAll(new Label("Manajemen Produk Agri-POS"), formBox, table, btnDelete);
     }
 

@@ -19,12 +19,12 @@ public class AppJavaFX extends Application {
     public void start(Stage stage) {
         try {
             Class.forName("org.postgresql.Driver");
-            // 1. Setup Database Connection
+            //  Database Connection
             Connection conn = DriverManager.getConnection(
                 "jdbc:postgresql://localhost:5432/agripos", "postgres", "JERUKAGUNG"
             );
 
-            // 2. Setup MVC Components
+            // 2.  MVC Components
             ProductDAO dao = new ProductDAOImpl(conn);
             ProductService service = new ProductService(dao);
             ProductFormView view = new ProductFormView();

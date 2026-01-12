@@ -7,6 +7,7 @@ public interface ProductDAO {
     void insert(Product product) throws Exception;
     Product findByCode(String code) throws Exception;
     List<Product> findAll() throws Exception;
+    
     void update(Product product) throws Exception;
     void delete(String code) throws Exception;
 }
