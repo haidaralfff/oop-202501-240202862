@@ -129,13 +129,15 @@ public class ProductTest {
         assertEquals("P02", product.getCode());
     }
 }
+```
+---
 
 ## Hasil Eksekusi
 (Program berhasil dijalankan dan unit test menggunakan JUnit berhasil dieksekusi tanpa error.
 ![Screenshot hasil](screenshots/JunitTestPatternTesting.png)
 ![Screenshot hasil](screenshots/pattrerntesting.png)
 )
-
+---
 
 ## Analisis
 (
