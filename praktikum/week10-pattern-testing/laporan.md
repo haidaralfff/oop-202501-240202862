@@ -130,8 +130,6 @@ public class ProductTest {
     }
 }
 
----
-
 ## Hasil Eksekusi
 (Program berhasil dijalankan dan unit test menggunakan JUnit berhasil dieksekusi tanpa error.
 ![Screenshot hasil](screenshots/JunitTestPatternTesting.png)
