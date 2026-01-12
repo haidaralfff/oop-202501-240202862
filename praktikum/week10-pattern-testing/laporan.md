@@ -34,14 +34,13 @@ Contoh:
 4. Membuat unit test menggunakan JUnit untuk menguji class `Product`.  
 5. Menjalankan program dan unit test menggunakan Maven.
 6. Commit message yang digunakan:week10-pattern-testing: implement singleton, mvc, and junit test
-
 )
 
 ---
-
 ## Implementasi Program
 
-### Singleton – DatabaseConnection
+//Singleton – DatabaseConnection
+
 ```java
 package com.upb.agripos.config;
 
@@ -111,7 +110,6 @@ public class ProductController {
 }
 
 // product test
-
 package com.upb.agripos.model;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -131,8 +129,6 @@ public class ProductTest {
         assertEquals("P02", product.getCode());
     }
 }
-
-
 
 ---
 
