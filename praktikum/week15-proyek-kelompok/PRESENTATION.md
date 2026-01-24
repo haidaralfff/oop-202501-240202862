@@ -14,10 +14,6 @@
 | 3 | Haidar Habibi Al Faris | 240202862 | Backend Developer | 
 | 4 | Hilda Sava Alzena | 240202865 | QA & Documentation | 
 
-**Kelas:** 2024 - Object Oriented Programming  
-**Periode:** January 2026 - Week 15 (Final Project)  
-**Institusi:** Universitas Pembangunan Buana
-
 ---
 
 ## 🎯 Slide 2: Visi & Misi
