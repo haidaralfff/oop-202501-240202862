@@ -66,29 +66,6 @@ CREATE INDEX idx_transaction_items_transaction ON transaction_items(transaction_
 CREATE INDEX idx_products_code ON products(code);
 
 -- ============================================================
--- INSERT SAMPLE DATA
--- ============================================================
-
--- Insert users
-INSERT INTO users (username, password, role) VALUES 
-('kasir001', 'pass123', 'KASIR'),
-('kasir002', 'pass123', 'KASIR'),
-('admin001', 'admin123', 'ADMIN');
-
--- Insert products (seed data)
-INSERT INTO products (code, name, category, price, stock) VALUES 
-('BNH-001', 'Benih Padi Premium', 'Benih', 25000.00, 150),
-('BNH-002', 'Benih Jagung Hibrida', 'Benih', 30000.00, 120),
-('BNH-003', 'Benih Cabai Keriting', 'Benih', 45000.00, 80),
-('PES-001', 'Pupuk Urea 50kg', 'Pupuk', 150000.00, 80),
-('PES-002', 'Pupuk NPK 50kg', 'Pupuk', 180000.00, 60),
-('OBT-001', 'Insektisida Organik 1L', 'Obat Tanaman', 65000.00, 40),
-('OBT-002', 'Fungisida Organik 1L', 'Obat Tanaman', 75000.00, 35),
-('ALT-001', 'Hand Sprayer 5L', 'Alat', 85000.00, 25),
-('ALT-002', 'Cangkul Standar', 'Alat', 45000.00, 50),
-('ALT-003', 'Selang 20m', 'Alat', 120000.00, 15);
-
--- ============================================================
 -- VERIFY DATA
 -- ============================================================
 
