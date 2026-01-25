@@ -1120,7 +1120,6 @@ Sistem **Agri-POS** adalah solusi lengkap untuk mengelola operasional toko perta
 
 ✅ **Admin** dalam mengelola stok produk dan melihat laporan penjualan  
 ✅ **Kasir** dalam melayani pelanggan dengan cepat dan akurat  
-✅ **Pemilik Toko** dalam memantau performa bisnis  
 
 ### Siap Digunakan
 
